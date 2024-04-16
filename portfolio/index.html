@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/6bfc9497cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <img class="logo" src="FullLogo_Transparent_NoBuffer.png" alt="" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front End Developer</p>
+          <h1>Hi, I'm <span>Jakub</span> <br />Szczygielski From Poland</h1>
+        </div>
+      </div>
+    </header>
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="274996730_378705007328020_7005218922459829862_n.jpg"
+              alt=""
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About me</h1>
+            <p>
+                Hello there! I'm Jakub Szczygielski, a passionate coding enthusiast with a keen interest in web development. Despite being at the outset of my journey, my enthusiasm and commitment make me a promising addition to any team or project.While my experience may be limited, my dedication and hunger for knowledge are boundless. I bring a fresh perspective, a willingness to tackle challenges head-on, and an unwavering commitment to delivering excellence.
+            </p>
+
+            <div class="tittles">
+              <p class="paragraphs active-link" onclick="makeActive('skills')">
+                Skills
+              </p>
+              <p class="paragraphs" onclick="makeActive('experience')">
+                Experience
+              </p>
+              <p class="paragraphs" onclick="makeActive('education')">
+                Education
+              </p>
+            </div>
+            <div class="content active-content" id="skills">
+              <ul>
+                <li>
+                  <span>HTML/CSS</span> <br />
+                  Proficiency in languages for creating website structure and styling.
+                </li>
+                <li>
+                  <span>JavaScript</span> <br />
+                  Creating interaction with users, content manipulation, and more. 
+                </li>
+                <li>
+                    <span>Communication Skills</span> <br />
+                    I have ability to communicate effectively with other team members, including designers, backend developers, and project managers.
+                  </li>
+                <li>
+                  <span>UX/UI</span> <br />
+                  Web Designing/App Interface
+                </li>
+                <li>
+                    <span>Responsive Design</span> <br />
+                    Ability to create websites that look and function well on various devices, from desktop computers to smartphones.
+                  </li>
+              </ul>
+            </div>
+            <div class="content" id="experience">
+              <ul>
+                <li>
+                  <span>Kitchen Chef</span> <br />
+                  KFC, Skurów - 2022.07-2022.12
+                </li>
+                <li>
+                  <span>Maths, Chemistry Tutor</span> <br />
+                  Myself, Poland - 2023.01-Current
+                </li>
+              </ul>
+            </div>
+            <div class="content" id="education">
+              <ul>
+                <li>
+                  <span>Zespół Szkół im. Ireny Sendlerowej</span> <br />
+                  2019.08-2023.05
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+                I have sufficient knowledge to develop and design websites that not only meet the functional requirements but also prioritize user experience and aesthetic appeal. With a strong foundation in front-end technologies such as HTML, CSS, and JavaScript, combined with a keen eye for design principles, I strive to create visually stunning and intuitive interfaces.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Web_design">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-mdb"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+                I possess ample expertise in UX/UI design, enabling me to craft compelling digital experiences that seamlessly blend aesthetics with functionality. With a deep understanding of user-centered design principles and a mastery of tool like Figma, I am adept at creating intuitive interfaces that prioritize user satisfaction and engagement. 
+            </p>
+            <a href="https://simple.wikipedia.org/wiki/User_experience_design">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-js"></i>
+            <h2>JavaScript</h2>
+            <p>
+                "I possess a robust proficiency in JavaScript, empowering me to develop dynamic and interactive web applications with precision and efficiency. With a solid foundation in JavaScript fundamentals and a mastery of modern framework and librarie such as React.js, I am capable of building scalable and responsive front-end solutions that deliver seamless user experiences. 
+            </p>
+            <a href="https://simple.wikipedia.org/wiki/JavaScript">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Twitter Header Photo2.png" style="" alt="" />
+            <div class="layer">
+              <h3>Web Page for Company</h3>
+              <p>
+                This year i published web page for small company in Poland that deals with switchgears. Check it out!
+              </p>
+              <a href="https://www.wio-mar.pl/"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="calculator.jpg" alt="" />
+            <div class="layer">
+              <h3>Calculator App</h3>
+              <p>
+                I have created a calculator application in JavaScript and React and it has taught me many things. I've learned to better understand the logic of programming, especially in handling mathematical operations. 
+              </p>
+              <a href="https://github.com/JakubSzczygielski/Calculator-App"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="sky-3554851_1280.jpg" alt="" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                I created a weather application in JavaScript that taught me how to handle APIs. Curious about the weather? Check it out!
+              </p>
+              <a href="https://github.com/JakubSzczygielski/Weather-App/tree/main"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/JakubSzczygielski" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>szczygiel274@.gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+48 780 067 273</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100055655711563&locale=pl_PL"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://github.com/JakubSzczygielski"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/jakub-szczygielski-768469304/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="Jakub_Szczygielski_CV.pdf" class="btn btn2" download
+              >Download Cv</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                placeholder="Your Message"
+                rows="6"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Jakub. Made with <i class="fa-solid fa-heart"></i> by
+          Jakub Szczygielski
+        </p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
